@@ -1,0 +1,35 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+    <title>Main Page</title>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="image-container">
+            <img srcset="https://picsum.photos/240/240 240w,
+             https://picsum.photos/384/384 384w,
+             https://picsum.photos/560/560 560w,
+             https://picsum.photos/960/960 960w"
+            sizes="(max-width: 240px) 240px,
+                    (max-width: 384px) 384px,
+                    (max-width: 560px) 560px,
+                    960px"
+            src="https://picsum.photos/1080/720"
+            alt="Dynamic Resolution Image">
+        </div>
+        
+        <div class="text-container">
+            <h1>Content Creation Start Here</h1>
+            <img src="{%static 'images/djingo.png' %}" alt="no picture!">
+        </div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+    <title>Main Page</title>
+</head>
+<body>
+    <h2> Here are the access records:</h2>
+
+    <div class="djangtwo">
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>site name</th>
+                <th> date access</th>
+            </thead>
+
+            {% for acc in access_records %}
+            <tr>
+                <td> {{acc.name}}</td>
+                <td> {{acc.date}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+        {% else %}
+            <p> no access record found!</p>
+        {% endif %}
+
+    </div>
+
+    <h2> Here are the Topics:</h2>
+
+    <div class="djangtwotopics">
+        {% if topics %}
+        <table>
+            <thead>
+                <th>Topics name</th>
+            </thead>
+
+            {% for acc in topics %}
+            <tr>
+                <td> {{acc.top_name}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+        {% else %}
+            <p> no access record found!</p>
+        {% endif %}
+
+    </div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+h1 {
+    color:rgb(4, 0, 0);
+}
+table,th,td {
+    border: 3px solid black
+}
+
+.content-wrapper {
+    display: flex;          /* This enables flexbox */
+    justify-content: space-between; /* Ensures that children divs are spaced evenly */
+    align-items: center;    /* Centers children divs vertically */
+}
+
+.image-container,
+.text-container {
+    flex: 1;                /* Ensures each child div takes up half the space */
+    padding: 20px;          /* Gives a little space around the content */
+}
+
+.image-container img {
+    width: 100%;            /* Makes the image fill its container */
+    height: auto;           /* Maintains the image's aspect ratio */
+}

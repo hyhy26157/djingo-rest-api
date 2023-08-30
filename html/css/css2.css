@@ -1,0 +1,37 @@
+body{
+    background: url(https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2023/04/11162204/Futuristic-City-1-1600x900.jpg?tr=w-900);
+    background-repeat:repeat;
+
+}
+
+div {
+    background:blue;
+    border-color: orange;
+    border-width: 4px;
+    border-style: double;
+
+}
+
+p{
+    color:rgb(15, 68, 243);
+}
+
+span  {
+    background: red;
+    color:black;
+
+}
+
+
+.class1{
+    color:grey;
+}
+
+.class2{
+    color:pink;
+}
+
+#abc{color:green;
+    text-decoration: line-through;
+
+}
