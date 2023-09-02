@@ -30,8 +30,6 @@ class UserProfileManager(BaseUserManager):
         return user
     
 
-
-
 class UserProfile(AbstractBaseUser,PermissionsMixin):
     """Database model for users in the system"""
 
@@ -57,8 +55,6 @@ class UserProfile(AbstractBaseUser,PermissionsMixin):
         """Return string representation of our user"""
         return self.email
     
-
-
 class Topic(models.Model):
     top_name = models.CharField(max_length=264, unique=True)
 

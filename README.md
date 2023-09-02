@@ -7,7 +7,8 @@
  4.1 edit the settings.py in the project folder and define the path of base folder * add in the app <name of the app> into the INSTALLED_APPS portion.
  4.2 edit the settings.py in the project folder and define the path of template folder & add in the template <name of the template> in the TEMPLATES portion.
  4.3 edit the settings.py in the project folder and define the path of static folder & add in the static <name of the static> in the STATICFILES_DIRS
-5.  make migration for model - python manage.py makemigrations
+ 4.4 edit the setting.py in the project folder and add 'rest_framework', 'rest_framework.authtoken' to installed apps
+5.  make migration for model - python manage.py makemigrations (app name)
 6. run migration for model - python manage.py migrate
 7. run shell - - python manage.py shell
 8. improve security  - python <path_to_manage.py>/manage.py createsuperuser
